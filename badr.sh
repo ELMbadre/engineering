@@ -5,14 +5,14 @@ USERNAME="your_username"
 REPO_NAME="your_repository"
 
 
-for i in {-31..101}
+for i in {-22..101}
 do
     touch "file${i}.py"
     echo "// This is file ${i}" >> "file${i}.py"
 done
 
 # Add, commit, and push each file
-for i in {-31..101}
+for i in {-22..101}
 do
     git add "file${i}.py"
     git commit -m "All tasks finished! 🏁"
